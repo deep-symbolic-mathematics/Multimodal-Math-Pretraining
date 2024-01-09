@@ -36,7 +36,7 @@ To use them, create a `weights/` folder in your project, download the checkpoint
 
 
 ## Pretraining Data Generation
-For pretraining, we generate synthetic (symbolic, numeric) pairs for math functions, based on methods from [Deep Learning for Symbolic Mathematics](https://openreview.net/forum?id=S1eZYeHFDS) and [End-to-end Symbolic Regression with Transformers](https://openreview.net/forum?id=S1eZYeHFDS). Each pair includes data points $(x,y)$ and a math function $f$ such that $y=f(x)$. See `generate_datapoints` function [here](./snip/envs/generators.py) for more info. You can also adjust data generation settings [here](./snip/envs/environment.py). 
+For pretraining, we generate synthetic (symbolic, numeric) pairs for math functions, based on methods from [SymbolicMathematics](https://openreview.net/forum?id=S1eZYeHFDS). Each pair includes data points $(x,y)$ and a math function $f$ such that $y=f(x)$. See `generate_datapoints` function [here](./snip/envs/generators.py) for more info. You can also adjust data generation settings [here](./snip/envs/environment.py). 
 
 The data is generated on-the-fly during training, but if you want to create and analyze it beforehand, use `run_export_data.sh`:
 ```
