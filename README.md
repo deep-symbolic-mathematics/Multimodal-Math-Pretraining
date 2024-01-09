@@ -9,7 +9,7 @@ Insipired by the great performance of [CLIP](https://arxiv.org/abs/2310.02227) i
 <p align="center">
 <img src="./images/SNIP.gif" width="80%" /> 
  <br>
-<b>SNIP, a pretrained multi-modal transformer model, bridges symbolic math equations and numeric data through contrastive learning, effectively encoding similarities between these domains.</b>
+<b>SNIP: A pretrained transformer model that connects symbolic math equations with numeric data using contrastive learning</b>
 </p>
 
 
