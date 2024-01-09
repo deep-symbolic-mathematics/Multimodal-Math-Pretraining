@@ -143,4 +143,4 @@ This work is built on top of other open source projects, including [Deep Learnin
 
 
 ## Contact Us
-For any questions or issues, you are welcome to open an issue in this repo, or contact us at parshinshojaee@vt.edu, and mmeidani@andrew.cmu.edu .
+For any questions or issues, you are welcome to open an issue in this repo, or contact us at mmeidani@andrew.cmu.edu, and parshinshojaee@vt.edu.
