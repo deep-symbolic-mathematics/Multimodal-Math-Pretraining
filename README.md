@@ -1,4 +1,4 @@
-# SNIP: A Multimodal Symbolic-Numeric Intergrated Pretraining for Math (MathCLIP)
+# SNIP: A Multimodal Symbolic-Numeric Pretraining for Math (MathCLIP)
 
 Official Implementation of **[SNIP: Bridging Mathematical Symbolic and Numeric Realms with Unified Pre-training](https://arxiv.org/abs/2310.02227)**. 
 
