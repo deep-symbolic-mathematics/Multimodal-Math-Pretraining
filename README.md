@@ -1,4 +1,6 @@
-# SNIP: A Multimodal Symbolic-Numeric Pretraining for Math (MathCLIP)
+# `SNIP`: A Multimodal Symbolic-Numeric Pretraining for Math (MathCLIP)
+
+[ArXiv](https://arxiv.org/abs/2310.02227) | [Models](https://drive.google.com/drive/folders/1-UDCDQWQi7ZEHyTJryErQadtzXouhByT?usp=sharing) | [Data](https://github.com/deep-symbolic-mathematics/Multimodal-Math-Pretraining/run_export_data.sh) | [Code](https://github.com/deep-symbolic-mathematics/Multimodal-Math-Pretraining/)
 
 Official Implementation of **[SNIP: Bridging Mathematical Symbolic and Numeric Realms with Unified Pre-training](https://arxiv.org/abs/2310.02227)**. 
 
