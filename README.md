@@ -8,7 +8,7 @@ Official Implementation of **ICLR 2024 Spotlight** paper **[SNIP: Bridging Mathe
 Insipired by the great performance of [CLIP](https://arxiv.org/abs/2310.02227) in vision-language representation learning, we introduce a multi-modal pre-training model for symbolic mathematics, known as **SNIP** for **Symbolic-Numeric Integrated Pre-training**, which emphasizes the significance of numeric-augmented representations in math representation learning. 
 
 <p align="center">
-<img src="./images/SNIP.gif" width="100%" /> 
+<img src="./images/SNIP3.gif" width="100%" /> 
  <br>
 <b>SNIP: A multi-modal transformer model that connects symbolic math equations with numeric data representations using contrastive learning</b>
 </p>
