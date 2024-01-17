@@ -126,11 +126,13 @@ To use SNIP for more complex tasks such as Symbolic Regression (uncovering symbo
 ## Citation
 If you find the paper or the repo helpful, please cite it with
 <pre>
-@article{meidani2023snip,
-  title={SNIP: Bridging Mathematical Symbolic and Numeric Realms with Unified Pre-training},
-  author={Meidani, Kazem and Shojaee, Parshin and Reddy, Chandan K and Farimani, Amir Barati},
-  journal={arXiv preprint arXiv:2310.02227},
-  year={2023}
+@inproceedings{
+anonymous2024snip,
+title={{SNIP}: Bridging Mathematical Symbolic and Numeric Realms with Unified Pre-training},
+author={Anonymous},
+booktitle={The Twelfth International Conference on Learning Representations},
+year={2024},
+url={https://openreview.net/forum?id=KZSEgJGPxu}
 }
 </pre>
 
