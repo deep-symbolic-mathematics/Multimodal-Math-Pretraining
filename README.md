@@ -58,34 +58,32 @@ python train.py --loss_type CLIP \
                 --latent_dim 512 \
                 --save_periodic 10
 ```
-Feel free to adjust training and data settings in `parsers.py` and `environment.py` under `snip/envs/`. After running the command, the model trained for every 10 (`save_periodic`) epochs is saved in `./dump/` path.
+Feel free to adjust training and data settings in `parsers.py` and `environment.py` under `snip/envs/`. After running the command, the model trained for every 10 (`save_periodic`) epochs is saved in `dump/` path.
 
 
 ## Using SNIP for Cross-modal Property Prediction
 Here we have provided code to test SNIP representations for the cross-modal symbolic-to-numeric property prediction tasks, meaning that in these tasks, the input is the symbolic mathematical equation and the label is the propery defined based on numeric data observations. 
 
 ### Data Generation 
-To try it out, start by generating data. For instance, to generate $10$k training examples for the **Non-Convexity Ratio (NCR)** prediction task (as explained in our [paper](https://arxiv.org/pdf/2310.02227.pdf)), use this command:
+To try it out, start by generating data. For instance, to generate 10k training examples for the **Non-Convexity Ratio (NCR)** prediction task (as explained in [paper](https://arxiv.org/pdf/2310.02227.pdf)), use this command:
 ```
 python train.py --export_data True --is_proppred True --property_type ncr --dump_path ./dump --max_input_dimension 1 --n_steps_per_epoch 625  --exp_name data --exp_id ncr
 ```
 
-This saves data for `ncr` property in `./dump/data/ncr/`. To generate data for other properties, just change the `property_type` parameter. 
+This saves data for `ncr` property in `dump/data/ncr/`. To generate data for other properties, just change the `--property_type` parameter. 
 
 ### Training 
-For this task, we use a Transformer encoder architecure (to encode symbolic equation inputs), followed by a regression predictor head (to predict property). Training is done using Mean Squared Error (MSE) loss. Following are the commands for training different model variants defined in Sec 4 of [paper](https://arxiv.org/pdf/2310.02227.pdf). 
+For this task, we use a Transformer encoder architecture (to encode symbolic equation inputs), followed by a regression predictor head (to predict the property). Training is done using Mean Squared Error (MSE) loss. Following are the commands for training different model variants defined in Sec 4 of [paper](https://arxiv.org/pdf/2310.02227.pdf). 
 
-Supervised Model (without Pretrining):
+**Supervised Model (without Pretrining)**:
 ```
 python train.py --is_proppred True \
                 --property_type ncr \
                 --reload_data functions,dump/data/ncr/train.prefix,dump/data/ncr/train.prefix, \
                 --normalize_y True \
-                --batch_size 16 \
+                --batch_size 64 \
                 --dump_path ./dump \
                 --max_input_dimension 1 \
-                --n_steps_per_epoch 625 \
-                --max_epoch 100000 \
                 --exp_name NCR_pred \
                 --exp_id run1 \
                 --lr 1e-5 \
@@ -93,17 +91,17 @@ python train.py --is_proppred True \
                 --save_periodic 10
 ```
 
-SNIP Encoder (frozen):
+**SNIP Encoder (frozen)**:
 ```
 python train.py --reload_model ./weights/snip-1d-normalized.pth --freeze_encoder True [other parameters] 
 ```
 
-SNIP Encoder (finetune):
+**SNIP Encoder (finetune)**:
 ```
 python train.py --reload_model ./weights/snip-1d-normalized.pth --freeze_encoder False [other parameters] 
 ```
 
-With this command, the model saves automatically every 10 epochs. To use SNIP's encoder, you should activate `--reload_model` parameter with the path of model weights. You can also freeze the encoder with `--freeze_encoder True`.
+With these commands, the model saves automatically every 10 epochs. To use SNIP's encoder, you should activate `--reload_model` parameter with the path of model weights. You can also freeze the encoder with `--freeze_encoder True`.
 
 
 ### Inference
