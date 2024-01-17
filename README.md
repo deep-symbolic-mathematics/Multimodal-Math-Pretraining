@@ -1,11 +1,11 @@
 # `SNIP`: A Multimodal Symbolic-Numeric Pretraining for Math (MathCLIP)
 
-Official Implementation of **ICLR 2024 Spotlight** paper **[SNIP: Bridging Mathematical Symbolic and Numeric Realms with Unified Pre-training](https://arxiv.org/abs/2310.02227)**. 
+Official Implementation of **ICLR 2024 Spotlight** paper **[SNIP: Bridging Mathematical Symbolic and Numeric Realms with Unified Pre-training](https://openreview.net/forum?id=KZSEgJGPxu)**. 
 
-[ArXiv](https://arxiv.org/abs/2310.02227) | [Models](https://drive.google.com/drive/folders/1-UDCDQWQi7ZEHyTJryErQadtzXouhByT?usp=sharing) | [Data](https://github.com/deep-symbolic-mathematics/Multimodal-Math-Pretraining/blob/main/run_export_data.sh) | [Code](https://github.com/deep-symbolic-mathematics/Multimodal-Math-Pretraining/)
+[Paper](https://openreview.net/forum?id=KZSEgJGPxu) | [Models](https://drive.google.com/drive/folders/1-UDCDQWQi7ZEHyTJryErQadtzXouhByT?usp=sharing) | [Data](https://github.com/deep-symbolic-mathematics/Multimodal-Math-Pretraining/blob/main/run_export_data.sh) | [Code](https://github.com/deep-symbolic-mathematics/Multimodal-Math-Pretraining/)
 
 ## Overview
-Insipired by the great performance of [CLIP](https://arxiv.org/abs/2310.02227) in vision-language representation learning, we introduce a multi-modal pre-training model for symbolic mathematics, known as **SNIP** for **Symbolic-Numeric Integrated Pre-training**, which emphasizes the significance of numeric-augmented representations in math representation learning. 
+Inspired by the great performance of [CLIP](https://arxiv.org/abs/2310.02227) in vision-language representation learning, we introduce a multi-modal pre-training model for symbolic mathematics, known as **SNIP** for **Symbolic-Numeric Integrated Pre-training**, which emphasizes the significance of numeric-augmented representations in math representation learning. 
 
 <p align="center">
 <img src="./images/SNIP3.gif" width="100%" /> 
@@ -41,9 +41,9 @@ For pretraining, we generate synthetic data of (symbolic, numeric) pairs for mat
 
 The data is generated on-the-fly during training, but if you want to create and analyze it beforehand, use `run_export_data.sh`:
 ```
-python pretrain.py --export_data True --dump_path ./dump --max_input_dimension 10 --n_steps_per_epoch 3125 --max_epoch 1000
+python train.py --export_data True --dump_path ./dump --max_input_dimension 10
 ```
-Your exported data will be in the `data.prefix` file.
+Your exported data will be saved in the `data.prefix` file.
 
 
 ## SNIP Pretraining
