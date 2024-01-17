@@ -47,20 +47,18 @@ Your exported data will be saved in the `data.prefix` file.
 
 
 ## SNIP Pretraining
-All training settings for SNIP are in `parsers.py`. SNIP uses Transformer encoders for both symbolic and numeric heads, which you can find in the `encoder_f` and `encoder_y` modules [here](./snip/model/__init__.py). For information on contrastive learning and training, look at this [file](./snip/trainer.py). Here's how you can start training:
+All training settings for SNIP are in `parsers.py`. SNIP uses Transformer encoders for both symbolic and numeric heads, which you can find in the `encoder_f` and `encoder_y` modules [here](./snip/model/__init__.py). For information on contrastive learning and training, look at the [trainer](./snip/trainer.py) file. Here's how you can start the training:
 ```
 python train.py --loss_type CLIP \
                 --batch_size 256 \
                 --dump_path ./dump \
                 --max_input_dimension 10 \
-                --n_steps_per_epoch 1000 \
-                --max_epoch 100000 \
                 --exp_id run1-10d \
                 --lr 4e-5 \
                 --latent_dim 512 \
                 --save_periodic 10
 ```
-Feel free to adjust training and data settings in `parsers.py` and `environment.py` under `snip/envs/`. After running the command, the model trained for every 10 (`save_periodic`) epochs is saved in `./dump/`.
+Feel free to adjust training and data settings in `parsers.py` and `environment.py` under `snip/envs/`. After running the command, the model trained for every 10 (`save_periodic`) epochs is saved in `./dump/` path.
 
 
 ## Using SNIP for Cross-modal Property Prediction
