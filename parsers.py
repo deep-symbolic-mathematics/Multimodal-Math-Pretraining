@@ -88,8 +88,8 @@ def get_parser():
     parser.add_argument(
         "--loss_type",
         type=str,
-        default='BT',
-        help="Pretraining Loss (BarlowTwins, CLIP)",
+        default='CLIP',
+        help="Pretraining Loss (CLIP)",
     )
     parser.add_argument(
         "--latent_dim", type=int, default=32, help="Dimension of Latent space (Bottleneck)"
