@@ -27,11 +27,11 @@ This library requires `python>3.7`
 
 
 ## Pretrained Models
-We've released two pretrained SNIP models, each designed for different types of analysis. Download them [here](https://drive.google.com/drive/folders/1-UDCDQWQi7ZEHyTJryErQadtzXouhByT?usp=sharing). You'll find:
+We've released two pretrained SNIP models, each designed for different types of analysis. Download them [here](https://drive.google.com/drive/folders/1oGVQPAuTwWQnhX_pxN3OdKDt9-rmCfV3?usp=share_link). You'll find:
 
-- **[SNIP-10dmax](https://drive.usercontent.google.com/download?id=1Q3g6rzqkguHt0krolOKGh4OA5f3JwZLe&export=download&authuser=0&confirm=t&uuid=8de0d6d8-00b5-4820-9ca4-1132d655f02f&at=APZUnTU8MZN1sqlewgAWqVSS00O1:1704728992176):** This model handles **up to 10-dimensional inputs**. More info in Section 5 and Appendix D p.3 of [paper](https://arxiv.org/pdf/2310.02227.pdf).
+- **[SNIP-10dmax](https://drive.google.com/drive/folders/1oGVQPAuTwWQnhX_pxN3OdKDt9-rmCfV3?usp=share_link):** This model handles **up to 10-dimensional inputs**. More info in Section 5 and Appendix D p.3 of [paper](https://arxiv.org/pdf/2310.02227.pdf).
 
-- **[SNIP-1d-normalized](https://drive.usercontent.google.com/download?id=18oUGkH8lSKSNEsSgXJwHZtkzAI8o9fGR&export=download&authuser=0&confirm=t&uuid=f7557162-3bca-436d-91f7-424481b33ee8&at=APZUnTVgWecsokWK1dILPl0IIHBF:1704729034259):** This model is for **1-dimensional inputs** with **normalized targets**, great for focusing on function patterns. More details in Section 4 and Appendix D of [paper](https://arxiv.org/pdf/2310.02227.pdf).
+- **[SNIP-1d-normalized](https://drive.google.com/drive/folders/1oGVQPAuTwWQnhX_pxN3OdKDt9-rmCfV3?usp=share_link):** This model is for **1-dimensional inputs** with **normalized targets**, great for focusing on function patterns. More details in Section 4 and Appendix D of [paper](https://arxiv.org/pdf/2310.02227.pdf).
 
 To use them, create a `weights/` folder in your project, download the checkpoints there, and use the `--reload_model` parameter with the model path, like `--reload_model ./weights/snip-1d-normalized.pth`."
 
