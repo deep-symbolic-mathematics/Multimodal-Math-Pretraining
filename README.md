@@ -2,7 +2,7 @@
 
 Official Implementation of **ICLR 2024 Spotlight** paper **[SNIP: Bridging Mathematical Symbolic and Numeric Realms with Unified Pre-training](https://openreview.net/forum?id=KZSEgJGPxu)**. 
 
-[Paper](https://openreview.net/forum?id=KZSEgJGPxu) | [Models](https://drive.google.com/drive/folders/1oGVQPAuTwWQnhX_pxN3OdKDt9-rmCfV3?usp=share_link) | [Data](https://github.com/deep-symbolic-mathematics/Multimodal-Math-Pretraining/blob/main/run_export_data.sh) | [Code](https://github.com/deep-symbolic-mathematics/Multimodal-Math-Pretraining/)
+[Paper](https://openreview.net/forum?id=KZSEgJGPxu) | [Models](https://drive.google.com/drive/folders/1oGVQPAuTwWQnhX_pxN3OdKDt9-rmCfV3?usp=share_link) | [Data](https://github.com/deep-symbolic-mathematics/Multimodal-Math-Pretraining/blob/main/run_export_data.sh) | [SRBench Results](https://github.com/deep-symbolic-mathematics/Multimodal-Symbolic-Regression/tree/main/srbench_results)
 
 ## Overview
 Inspired by the great performance of [CLIP](https://arxiv.org/abs/2310.02227) in vision-language representation learning, we introduce a multi-modal pre-training model for symbolic mathematics, known as **SNIP** for **Symbolic-Numeric Integrated Pre-training**, which emphasizes the significance of numeric-augmented representations in math representation learning. 
