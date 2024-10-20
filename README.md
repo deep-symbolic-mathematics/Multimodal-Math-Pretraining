@@ -118,6 +118,9 @@ This command will use the `--reload_model` parameter to load the weights of your
 ## Using SNIP for Symbolic Regression
 To use SNIP for more complex tasks such as Symbolic Regression (uncovering symbolic math equations from data: numeric-to-symbolic generation task), check **[Multimodal-Symbolic-Regression](https://github.com/deep-symbolic-mathematics/Multimodal-Symbolic-Regression)** repository.
 
+### Final Results on SRBench 
+Our experimental results of SNIP on SRBench datasets for symbolic regression are provided in the [srbench_results/](https://github.com/deep-symbolic-mathematics/Multimodal-Symbolic-Regression/tree/main/srbench_results) directory in the above repository. These results are shared to help the research community reproduce our paper's findings and serve as reference benchmarks. Each result file contains detailed performance metrics and experimental configurations used in our evaluations.
+
 
 ## Citation
 If you find the paper or the repo helpful, please cite it with
