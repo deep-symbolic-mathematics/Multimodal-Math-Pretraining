@@ -126,9 +126,9 @@ Our experimental results of SNIP on SRBench datasets for symbolic regression are
 If you find the paper or the repo helpful, please cite it with
 <pre>
 @inproceedings{
-anonymous2024snip,
+meidani2024snip,
 title={{SNIP}: Bridging Mathematical Symbolic and Numeric Realms with Unified Pre-training},
-author={Anonymous},
+author={Kazem Meidani and Parshin Shojaee and Chandan K. Reddy and Amir Barati Farimani},
 booktitle={The Twelfth International Conference on Learning Representations},
 year={2024},
 url={https://openreview.net/forum?id=KZSEgJGPxu}
